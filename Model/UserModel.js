@@ -23,6 +23,9 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ["Student", "Admin", "Visitor"],
         default: "Visitor"
+    },
+    token:{
+    type: String,
     }
 });
 
